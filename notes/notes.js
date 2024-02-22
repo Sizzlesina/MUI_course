@@ -115,4 +115,35 @@
 ? 2 - control : Choose how we want to control this FormLabel (with which component?)
 ? 3 - label 
 
+
+++ Checkbox:
+*Props:
+? 1 - checked
+? 2 - onChange
+
+++ FormGroup: We can have so many FormLabel's inside the FormGroup
+*Props:
+? 1 - row
+
+! In the read world form applications we do this to checkboxes:
+1 - create a state
+2 - add a checked prop to every checkbox 
+3 - the value of the checked prop is : 
+@ state.includes("value of the checkbox")
+4 - add a onChange prop to every checkbox
+5 - the value of the onChange prop is a handler function that we wrote earlier
+@ The handler function:
+++ Example:
+const handleCheckbox = (e) => {
+  const index = state.indexOf(e.target.value);
+  if (index === -1 ) {
+    setState([...state, e.target.value])
+  } else{
+    setState(state.filter((i) => i !== e.target.value))
+  }
+}
+
+++ Switch:
+*Props:
+? 1 - 
  */
