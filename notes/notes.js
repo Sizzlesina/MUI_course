@@ -155,8 +155,18 @@ const handleCheckbox = (e) => {
 ? 3 - icon 
 ? 4 - emptyIcon
 ? 5 - onChange
-? 6 - multiple 
-? 7 - fullWidth
+
 !HINT: We can change the select mode to multiple select by an handle function on onChange
+
+++ Select:
+*Props:
+? 1 - multiple 
+? 2 - fullWidth (Can add to all the components)
+
+++ AutoComplete:
+*Props:
+? 1 - freeSolo
+? 2 - options
+? 3 - renderInput (check the component example)
 
  */

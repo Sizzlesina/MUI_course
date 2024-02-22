@@ -6,7 +6,8 @@
 // import CheckBoxExamples from "./components/CheckBoxExamples";
 // import RatingExamples from "./components/RatingExamples";
 // import SwitchExamples from "./components/SwitchExamples";
-import SelectExamples from "./components/SelectExamples";
+// import SelectExamples from "./components/SelectExamples";
+import AutoCompleteExamples from "./components/AutoCompleteExamples";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <CheckBoxExamples /> */}
       {/* <SwitchExamples /> */}
       {/* <RatingExamples /> */}
-      <SelectExamples />
+      {/* <SelectExamples /> */}
+      <AutoCompleteExamples />
     </div>
   );
 }
