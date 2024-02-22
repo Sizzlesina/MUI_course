@@ -68,13 +68,6 @@
 
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-++ Stack:
-? 1 - direction: We can choose that the direction of the div element that the 
-? 2 - spacing : Works as same as the padding
-? 3 - justifyContent
-? 4 - margin 
-
-   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ TextField:
 *Props:
@@ -195,5 +188,19 @@ sx={{"&:hover":backgroundColor:"secondary.main"}}
 ? 3 - bgColor
 ? 4 - m: This prop is the margin shorthand
 !All about this component: https://mui.com/material-ui/react-box
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Stack:
+? 1 - direction: We can choose that the direction of the div element that the 
+? 2 - spacing : Works as same as the padding
+? 3 - justifyContent
+? 4 - margin 
+? 5 - sx
+? 6 - divider: This prop will get am divider component
 
+++ Divider:
+*Props:
+? 1 - orientation : horizontal or vertical
+? 2 - flexItem
+
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  */
