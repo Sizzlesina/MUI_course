@@ -70,6 +70,49 @@
 ? 1 - direction: We can choose that the direction of the div element that the 
 ? 2 - spacing : Works as same as the padding
 ? 3 - justifyContent
+? 4 - margin 
 
+
+++ TextField:
+*Props:
+? 1 - label 
+? 2 - variant : outlined , standard , filled
+? 3 - required
+? 4 - size
+? 5 - helperText : The text that help us know the textField better
+? 6 - color 
+? 7 - inputProps{{}} : startAdornment or endAdornment 
+? 8 - error  : Used to handle a error (We can handle it using state and this prop) 
+? 9 - onChange : The value of the TextField stored in the setState
+? 10 - value : The state 
+
+
+++ InputAdornment: 
+*Props:
+? 1 - position : start , end
+
+++ Radio:
+*Props:
+? 1 - value : Better be a static and manually value
+? 2 - onChange : Will be set on the state setter
+? 3 - checked : We can have a function which choose when the radio button should be checked
+
+++ RadioGroup: Used for many Radio options and not one
+*Props:
+? 1 - name
+? 2 - onChange
+? 3 - value
+? 4 - aria-labelledby
+? 5 - row
+
+++ FormControl : Used for form sections
+
+++ FormLabel : Label of the FormControl
+
+++ FormControlLabel : Used for every radio button label we have
+*Props:
+? 1 - value
+? 2 - control : Choose how we want to control this FormLabel (with which component?)
+? 3 - label 
 
  */
