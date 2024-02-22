@@ -4,8 +4,9 @@
 // import TextFieldExamples from "./components/TextFieldExamples";
 // import RadioGroupExamples from "./components/RadioGroupExamples";
 // import CheckBoxExamples from "./components/CheckBoxExamples";
-import RatingExamples from "./components/RatingExamples";
-import SwitchExamples from "./components/SwitchExamples";
+// import RatingExamples from "./components/RatingExamples";
+// import SwitchExamples from "./components/SwitchExamples";
+import SelectExamples from "./components/SelectExamples";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       {/* <CheckBoxExamples /> */}
       {/* <SwitchExamples /> */}
       {/* <RatingExamples /> */}
+      <SelectExamples />
     </div>
   );
 }
