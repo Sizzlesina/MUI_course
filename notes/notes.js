@@ -145,5 +145,15 @@ const handleCheckbox = (e) => {
 
 ++ Switch:
 *Props:
-? 1 - 
+? 1 - checked
+? 2 - onChange
+
+++ Rating:
+*Props:
+? 1 - value
+? 2 - precision  : value is a number
+? 3 - icon 
+? 4 - emptyIcon
+? 5 - onChange
+
  */
