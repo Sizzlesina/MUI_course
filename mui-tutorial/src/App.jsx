@@ -11,7 +11,8 @@
 // import LayoutBox from "./layouts/LayoutBox";
 // import LayoutStack from "./layouts/LayoutStack";
 // import LayoutContainer from "./layouts/LayoutContainer";
-import LayoutGrid from "./layouts/LayoutGrid";
+// import LayoutGrid from "./layouts/LayoutGrid";
+import LayoutResponsive from "./layouts/LayoutResponsive";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <LayoutBox /> */}
       {/* <LayoutStack /> */}
       {/* <LayoutContainer /> */}
-      <LayoutGrid />
+      {/* <LayoutGrid /> */}
+      <LayoutResponsive />
     </div>
   );
 }

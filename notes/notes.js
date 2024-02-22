@@ -234,5 +234,13 @@ xl : extra large : 1536px
 ? 2 - xs , md , lg , xl , sm : These are the breakpoints and the columns that the grid item will get 
 ? 3 - item
 ? 4 - spacing
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Responsive layout:
+- We can use breakpoints and implement different styles or different bahavior of the element in the breakpoints 
+
+*Props:
+? xs , sm , md , lg , md
+
+!HINT: When we want to use breakpoints inside the sx prop we can open an curly brace and then write the value of the styles in every breakpoint
 
  */
