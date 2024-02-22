@@ -10,7 +10,8 @@
 // import AutoCompleteExamples from "./components/AutoCompleteExamples";
 // import LayoutBox from "./layouts/LayoutBox";
 // import LayoutStack from "./layouts/LayoutStack";
-import LayoutContainer from "./layouts/LayoutContainer";
+// import LayoutContainer from "./layouts/LayoutContainer";
+import LayoutGrid from "./layouts/LayoutGrid";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <AutoCompleteExamples /> */}
       {/* <LayoutBox /> */}
       {/* <LayoutStack /> */}
-      <LayoutContainer />
+      {/* <LayoutContainer /> */}
+      <LayoutGrid />
     </div>
   );
 }

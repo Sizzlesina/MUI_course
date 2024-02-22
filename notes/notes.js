@@ -208,5 +208,31 @@ sx={{"&:hover":backgroundColor:"secondary.main"}}
    ? 1 - maxWidth : xl , lg , md , sm , xs
    ? 2 - fixed : The minWidth of the container will automatically changes
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Grid: 
+@ - The grid layout system in MUI is a powerful and flexible way to create responsive and consistent grid-based designs in React applications
+
+@ - It uses CSS's flexible Box module for high flexibility
+
+@ - There are two types of layout props : containers and items
+
+* Responsive behavior:
+@ - There are five grid breakpoints : xs , sm , md , lg and xl
+
+@ - default values: 
+xs : extra small: 0px
+sm : small : 600px
+md : medium : 900px
+lg : large : 1200px
+xl : extra large : 1536px
+
+@ - Grid system is based on a 12-column layout
+
+@ - Spacing and additional features
+
+* Props:
+? 1 - container
+? 2 - xs , md , lg , xl , sm : These are the breakpoints and the columns that the grid item will get 
+? 3 - item
+? 4 - spacing
 
  */
