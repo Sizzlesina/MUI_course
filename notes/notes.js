@@ -55,6 +55,7 @@
 ++ Material ui icons:
 !Link: https://mui.com/material-ui/material-icons/
 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ IconButton:
 - We can have icons as a button
@@ -65,6 +66,7 @@
 ? 4 - disableRipple: For disabling the effect
 ? 5 - onClick 
 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ Stack:
 ? 1 - direction: We can choose that the direction of the div element that the 
@@ -72,6 +74,7 @@
 ? 3 - justifyContent
 ? 4 - margin 
 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ TextField:
 *Props:
@@ -86,16 +89,19 @@
 ? 9 - onChange : The value of the TextField stored in the setState
 ? 10 - value : The state 
 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ InputAdornment: 
 *Props:
 ? 1 - position : start , end
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ Radio:
 *Props:
 ? 1 - value : Better be a static and manually value
 ? 2 - onChange : Will be set on the state setter
 ? 3 - checked : We can have a function which choose when the radio button should be checked
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ RadioGroup: Used for many Radio options and not one
 *Props:
@@ -104,22 +110,27 @@
 ? 3 - value
 ? 4 - aria-labelledby
 ? 5 - row
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ FormControl : Used for form sections
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ FormLabel : Label of the FormControl
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ FormControlLabel : Used for every radio button label we have
 *Props:
 ? 1 - value
 ? 2 - control : Choose how we want to control this FormLabel (with which component?)
 ? 3 - label 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ++ Checkbox:
 *Props:
 ? 1 - checked
 ? 2 - onChange
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ FormGroup: We can have so many FormLabel's inside the FormGroup
 *Props:
@@ -142,11 +153,13 @@ const handleCheckbox = (e) => {
     setState(state.filter((i) => i !== e.target.value))
   }
 }
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ Switch:
 *Props:
 ? 1 - checked
 ? 2 - onChange
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ Rating:
 *Props:
@@ -157,16 +170,30 @@ const handleCheckbox = (e) => {
 ? 5 - onChange
 
 !HINT: We can change the select mode to multiple select by an handle function on onChange
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ Select:
 *Props:
 ? 1 - multiple 
 ? 2 - fullWidth (Can add to all the components)
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ++ AutoComplete:
 *Props:
 ? 1 - freeSolo
 ? 2 - options
 ? 3 - renderInput (check the component example)
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Layouts in Material UI:
+
+++ Box:
+*Props:
+? 1 - component
+? 2 - sx: Which is a object and we can pass in styles in it like {backgroundColor: "primary.main"}
+!HINT: We can add hover styles to the box component with this syntax :
+sx={{"&:hover":backgroundColor:"secondary.main"}}
+? 3 - bgColor
+? 4 - m: This prop is the margin shorthand
+!All about this component: https://mui.com/material-ui/react-box
 
  */

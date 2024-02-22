@@ -7,7 +7,8 @@
 // import RatingExamples from "./components/RatingExamples";
 // import SwitchExamples from "./components/SwitchExamples";
 // import SelectExamples from "./components/SelectExamples";
-import AutoCompleteExamples from "./components/AutoCompleteExamples";
+// import AutoCompleteExamples from "./components/AutoCompleteExamples";
+import LayoutBox from "./layouts/LayoutBox";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <SwitchExamples /> */}
       {/* <RatingExamples /> */}
       {/* <SelectExamples /> */}
-      <AutoCompleteExamples />
+      {/* <AutoCompleteExamples /> */}
+      <LayoutBox />
     </div>
   );
 }
