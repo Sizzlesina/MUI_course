@@ -367,6 +367,13 @@ function theming(){
 !HINT: Remember that because we create the value manually we cant type just "color1" and we must write "color1.main"
 
 ! All the default values for theme: https://mui.com/material-ui/customization/default-theme/
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ DarkMode:
+- In the palette inside the theme variable we must add a property which is mode:"dark"
+
+- Then below the ThemeProvider we must add a <CssBaseline /> to have the darkMode
+
+!HINT: Using the state and two different themes we can change between lightTheme and darkTheme
 
 
  */

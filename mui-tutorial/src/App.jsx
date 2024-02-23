@@ -17,6 +17,7 @@
 import LayoutAccordion from "./layouts/LayoutAccordion";
 import LayoutAppbar from "./layouts/LayoutAppbar";
 import LayoutComponentCard from "./layouts/LayoutComponentCard";
+import DarkMode from "./theming/DarkMode";
 import Theming from "./theming/Theming";
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
       {/* <LayoutComponentCard /> */}
       {/* <LayoutAccordion /> */}
       {/* <LayoutAppbar /> */}
-      <Theming />
+      {/* <Theming /> */}
+      <DarkMode />
     </div>
   );
 }
