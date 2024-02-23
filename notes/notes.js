@@ -259,5 +259,20 @@ xl : extra large : 1536px
 ? 2 - component : In the examples component we set the component type to image
 ? 3 - alt : Using for image as same as the HTML img
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Accordion:
+- This component is like a container and we can use other Accordion components inside this component
+*Props:
+? 1 - disabled
+
+
+++ AccordionSummary:
+- This component is like a header to the accordion and when the user click on this part the other parts show up
+*Props:
+? 1 - expandIcon: We can have an expand icon for when the accordion got opened and got closed
+
+
+++ AccordionDetails:
+- This component is the details that will show up after the user clicked on the AccordionSummary 
+
 
  */
