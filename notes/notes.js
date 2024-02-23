@@ -287,6 +287,43 @@ xl : extra large : 1536px
 *Props:
 ? 1 - sx
 (Read the documentation for other props in the Toolbar)
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Theming:
+- Customization in MUI refers to the ability to modify the styles, behavior and appearance of individual components to fit specific design requirements
 
+- Customization is often done on a component level, tailoring specific components to match the desired look and behavior 
+
+- Theming in MUI refers to the ability to create a consistent visual design across the entire application by defining a set of global styles and settings
+
+@ In summary:
+Customization in MUI focuses on modifying and extending individual components, while theming is about creating a consistent visual design by defining global styles and settings for the entire application while theming allows for a broader , system-wide-design customization
+
+++ Customization:
+- Material UI provides several different ways to customize components styles:
+@ One-off-customization
+@ Reusable component
+@ Global theme overrides
+@ Global CSS override
+
+
+++ Theming:
+- Theme let you apply a consistent tone to your app.
+
+- It allows you to customize all design aspects of your project in order to meet the specific needs of your business or brand.
+
+- If you wish to customize the theme, you need to use the ThemeProvider
+
+- The following sections cover the most important theme variables:
+@ .paletter
+@ .typography
+@ .spacing
+@ .breakpoints
+@ .zIndex
+@ .transitions
+@ .components
+
+! All the document we need for this section: https://mui.com/material-ui/customization/how-to-customize/
+
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  */
