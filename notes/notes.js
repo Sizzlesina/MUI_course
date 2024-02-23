@@ -374,6 +374,9 @@ function theming(){
 - Then below the ThemeProvider we must add a <CssBaseline /> to have the darkMode
 
 !HINT: Using the state and two different themes we can change between lightTheme and darkTheme
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Styled Utility:
+- We can use the "styled" function and as same as styled components create new components with favorite styles
 
 
  */
