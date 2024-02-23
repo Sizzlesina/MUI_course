@@ -242,5 +242,22 @@ xl : extra large : 1536px
 ? xs , sm , md , lg , md
 
 !HINT: When we want to use breakpoints inside the sx prop we can open an curly brace and then write the value of the styles in every breakpoint
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Card:
+- This component is a card conatiner and we can use other components inside this component
+
+++ CardContent: 
+- This component is for every content we can use inside the card component
+
+++ CardActions:
+- This component is used for every action we need inside our card like Button
+
+++ CardMedia:
+- We use this component whenever we want to use an image or an media into our card
+*Props:
+? 1 - image: The src of the image
+? 2 - component : In the examples component we set the component type to image
+? 3 - alt : Using for image as same as the HTML img
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  */

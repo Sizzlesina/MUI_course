@@ -12,7 +12,9 @@
 // import LayoutStack from "./layouts/LayoutStack";
 // import LayoutContainer from "./layouts/LayoutContainer";
 // import LayoutGrid from "./layouts/LayoutGrid";
-import LayoutResponsive from "./layouts/LayoutResponsive";
+// import LayoutResponsive from "./layouts/LayoutResponsive";
+
+import LayoutComponentCard from "./layouts/LayoutComponentCard";
 
 function App() {
   return (
@@ -30,7 +32,8 @@ function App() {
       {/* <LayoutStack /> */}
       {/* <LayoutContainer /> */}
       {/* <LayoutGrid /> */}
-      <LayoutResponsive />
+      {/* <LayoutResponsive /> */}
+      <LayoutComponentCard />
     </div>
   );
 }
