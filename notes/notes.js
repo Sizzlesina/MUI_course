@@ -65,7 +65,7 @@
 ? 3 - disableElevation: For disabling the shadow
 ? 4 - disableRipple: For disabling the effect
 ? 5 - onClick 
-
+? 6 - edge: This takes two values => start , end
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -273,6 +273,20 @@ xl : extra large : 1536px
 
 ++ AccordionDetails:
 - This component is the details that will show up after the user clicked on the AccordionSummary 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ AppBar:
+- This component is like a header container which we can have all our header items in it (This component will use other components inside of itself)
+*Props:
+? 1 - position: By default the position is relative but we can change the position to static which then position the content we write below the component visible 
+
+? 2 - color
+
+++ Toolbar:
+- For implementing the header items we can use this component
+!HINT: when we dont have this component in the AppBar our items wont be sorted
+*Props:
+? 1 - sx
+(Read the documentation for other props in the Toolbar)
 
 
  */

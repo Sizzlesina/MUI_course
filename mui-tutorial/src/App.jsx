@@ -15,6 +15,7 @@
 // import LayoutResponsive from "./layouts/LayoutResponsive";
 
 import LayoutAccordion from "./layouts/LayoutAccordion";
+import LayoutAppbar from "./layouts/LayoutAppbar";
 import LayoutComponentCard from "./layouts/LayoutComponentCard";
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       {/* <LayoutGrid /> */}
       {/* <LayoutResponsive /> */}
       {/* <LayoutComponentCard /> */}
-      <LayoutAccordion />
+      {/* <LayoutAccordion /> */}
+      <LayoutAppbar />
     </div>
   );
 }
