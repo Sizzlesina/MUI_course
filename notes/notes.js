@@ -325,5 +325,48 @@ Customization in MUI focuses on modifying and extending individual components, w
 ! All the document we need for this section: https://mui.com/material-ui/customization/how-to-customize/
 
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ Theming in MUI:
+- Using "createTheme" and "ThemeProvider"
+
+++ createThem:
+- In a variable we can store all the theme we need 
+++ Example:
+const theme = createTheme({
+   palette:{
+      primary:{
+         main : red[500]
+      }
+   }
+})
+
+@ This then creates a theme which in it the primary color is red
+
+++ ThemeProvider
+- Whenever we want to use the theme we will wrap up that part into an ThemeProvider and it needs a theme prop so as the value of this theme prop we give it the variable we made earlier which contains all the theme
+++ Example:
+<ThemeProvider theme={theme}>
+<Typography variant="h1" color={"primary"}>Hello World!</Typography>
+</ThemeProvider>
+
+@ We can add new values for a prop in MUI:
+++ Example:
+const theme = createTheme({
+   palette:{
+      color1:{
+         main: green[500]
+      }
+   }
+})
+function theming(){
+   <ThemeProvider theme={theme}>
+   <Typography variant="h1" color="color1.main">Hello World!</Typography>
+   </ThemeProvider>
+}
+
+! This then creates a new value for color prop 
+!HINT: Remember that because we create the value manually we cant type just "color1" and we must write "color1.main"
+
+! All the default values for theme: https://mui.com/material-ui/customization/default-theme/
+
 
  */

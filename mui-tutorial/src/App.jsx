@@ -17,6 +17,7 @@
 import LayoutAccordion from "./layouts/LayoutAccordion";
 import LayoutAppbar from "./layouts/LayoutAppbar";
 import LayoutComponentCard from "./layouts/LayoutComponentCard";
+import Theming from "./theming/Theming";
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
       {/* <LayoutResponsive /> */}
       {/* <LayoutComponentCard /> */}
       {/* <LayoutAccordion /> */}
-      <LayoutAppbar />
+      {/* <LayoutAppbar /> */}
+      <Theming />
     </div>
   );
 }
