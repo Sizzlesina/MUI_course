@@ -22,6 +22,7 @@
 
 import Form from "./state-management/Form";
 import StateOne from "./state-management/StateOne";
+import TablePage from "./state-management/TablePage"; 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Routes path='/'>
           <Route index element={<Form />} />
           <Route path='/state-one' element={<StateOne />} />
+          <Route path='/table' element={<TablePage />} />
         </Routes>
       </BrowserRouter>
     </div>

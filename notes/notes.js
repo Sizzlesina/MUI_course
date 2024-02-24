@@ -388,5 +388,18 @@ function theming(){
 @ In the fourth video:
 - Creating a Header component and move between routes
 @ In the fifth video:
-- 
+- Creating the TablePage component and introduce new MUI components:
+++ TableContainer:
+- This component is the container of the Table component
+++ Table:
+- This component is holds the TableHeader and TableBody inside of it
+++ TableHead:
+- This is the header of the table
+++ TableBody:
+- This is the body of the table
+++ TableRow:
+- We have some TableRows which contains some TableCell
+++ TableCell:
+- This is the cells of the table
+
  */

@@ -14,6 +14,9 @@ function Header() {
         <Button component={Link} to='/state-one' sx={{ color: "white" }}>
           State One
         </Button>
+        <Button component={Link} to='/table' sx={{ color: "white" }}>
+          Table
+        </Button>
       </Toolbar>
     </AppBar>
   );
