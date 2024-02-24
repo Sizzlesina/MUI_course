@@ -13,13 +13,15 @@
 // import LayoutContainer from "./layouts/LayoutContainer";
 // import LayoutGrid from "./layouts/LayoutGrid";
 // import LayoutResponsive from "./layouts/LayoutResponsive";
+// import LayoutAccordion from "./layouts/LayoutAccordion";
+// import LayoutAppbar from "./layouts/LayoutAppbar";
+// import LayoutComponentCard from "./layouts/LayoutComponentCard";
+// import DarkMode from "./theming/DarkMode";
+// import StyledUtility from "./theming/StyledUtility";
+// import Theming from "./theming/Theming";
 
-import LayoutAccordion from "./layouts/LayoutAccordion";
-import LayoutAppbar from "./layouts/LayoutAppbar";
-import LayoutComponentCard from "./layouts/LayoutComponentCard";
-import DarkMode from "./theming/DarkMode";
-import StyledUtility from "./theming/StyledUtility";
-import Theming from "./theming/Theming";
+import Form from "./state-management/Form";
+import StateOne from "./state-management/StateOne";
 
 function App() {
   return (
@@ -43,7 +45,9 @@ function App() {
       {/* <LayoutAppbar /> */}
       {/* <Theming /> */}
       {/* <DarkMode /> */}
-      <StyledUtility />
+      {/* <StyledUtility /> */}
+      {/* <StateOne /> */}
+      <Form />
     </div>
   );
 }

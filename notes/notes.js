@@ -377,6 +377,11 @@ function theming(){
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ++ Styled Utility:
 - We can use the "styled" function and as same as styled components create new components with favorite styles
-
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++ State management in MUI:
+@ In the first video:
+- Simple state management in React by using useState
+@ In the second video:
+- Created a simple form component using the states
 
  */
