@@ -402,4 +402,12 @@ function theming(){
 ++ TableCell:
 - This is the cells of the table
 
+@ In the sixth video:
+- Handling the errors and loading 
+++ CircularProgress:
+- This component is used for loading pages
+++ Alert:
+- This component is used for errors
+*Props:
+? 1 - severity : the value of this prop better be error
  */

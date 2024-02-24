@@ -1,6 +1,8 @@
 /** @format */
 import {
+  Alert,
   Box,
+  CircularProgress,
   Table,
   TableBody,
   TableCell,
@@ -12,13 +14,51 @@ import { useEffect, useState } from "react";
 import Header from "./Header";
 function TablePage() {
   const [users, setUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   useEffect(function () {
     fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((data) => setUsers(data))
-      .catch((error) => console.log(error));
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch the data");
+        }
+        response.json();
+      })
+      .then((data) => {
+        setUsers(data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setError(error);
+        setIsLoading(false);
+      });
   }, []);
 
+  if (isLoading)
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}>
+        <CircularProgress />
+      </Box>
+    );
+  if (error)
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}>
+        <Alert severity='error'>{error.message}</Alert>
+      </Box>
+    );
   return (
     <Box>
       <Header />
