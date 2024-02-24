@@ -2,6 +2,7 @@
 
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { useState } from "react";
+import Header from "./Header";
 
 function StateOne() {
   const [num, setNum] = useState(0);
@@ -13,6 +14,7 @@ function StateOne() {
   };
   return (
     <Box>
+      <Header />
       <Stack
         direction={"row"}
         sx={{ display: "flex", justifyContent: "center" }}>

@@ -22,6 +22,7 @@
 
 import Form from "./state-management/Form";
 import StateOne from "./state-management/StateOne";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -47,7 +48,12 @@ function App() {
       {/* <DarkMode /> */}
       {/* <StyledUtility /> */}
       {/* <StateOne /> */}
-      <Form />
+      <BrowserRouter>
+        <Routes path='/'>
+          <Route index element={<Form />} />
+          <Route path='/state-one' element={<StateOne />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
