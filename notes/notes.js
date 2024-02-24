@@ -383,5 +383,7 @@ function theming(){
 - Simple state management in React by using useState
 @ In the second video:
 - Created a simple form component using the states
+@ In the third video: 
+- Form validation with MUI and React
 
  */

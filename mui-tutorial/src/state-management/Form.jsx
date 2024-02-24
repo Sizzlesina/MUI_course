@@ -15,15 +15,29 @@ function Form() {
   const [email, setEmail] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [gender, setGender] = useState("");
+  const [error, setError] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("form submited", name, email, termsAccepted, gender);
-    console.log("Clean the states");
-    setName("");
-    setEmail("");
-    setTermsAccepted(false);
-    setGender("");
+    const error = {};
+    if (!name) {
+      error.name = "Name is Required";
+    }
+    if (!email) {
+      error.email = "Email is Required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      error.email = "Invalid email format!";
+    }
+    if (Object.keys(error).length === 0) {
+      console.log("form submited", name, email, termsAccepted, gender);
+      console.log("Clean the states");
+      setName("");
+      setEmail("");
+      setTermsAccepted(false);
+      setGender("");
+    } else {
+      setError(error);
+    }
   };
 
   return (
@@ -32,22 +46,23 @@ function Form() {
         <Typography variant='h5'>Simple form</Typography>
         <Box m={4} ml={0}>
           <TextField
-            type='text'
             fullWidth
             id='name'
             label='name'
             value={name}
-            required
             onChange={(e) => setName(e.target.value)}
+            error={!!error.name}
+            helperText={error.name}
           />
         </Box>
         <Box m={4} ml={0}>
           <TextField
-            type='email'
             fullWidth
             value={email}
             label='email'
             onChange={(e) => setEmail(e.target.value)}
+            error={!!error.email}
+            helperText={error.email}
           />
         </Box>
 
