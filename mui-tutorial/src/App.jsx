@@ -20,9 +20,11 @@
 // import StyledUtility from "./theming/StyledUtility";
 // import Theming from "./theming/Theming";
 
+import HomePage from "./SPA/pages/HomePage";
+import LoginPage from "./SPA/pages/LoginPage";
 import Form from "./state-management/Form";
 import StateOne from "./state-management/StateOne";
-import TablePage from "./state-management/TablePage"; 
+import TablePage from "./state-management/TablePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -49,11 +51,21 @@ function App() {
       {/* <DarkMode /> */}
       {/* <StyledUtility /> */}
       {/* <StateOne /> */}
-      <BrowserRouter>
+
+      {/* State mangement  */}
+      {/* <BrowserRouter>
         <Routes path='/'>
           <Route index element={<Form />} />
           <Route path='/state-one' element={<StateOne />} />
           <Route path='/table' element={<TablePage />} />
+        </Routes>
+      </BrowserRouter> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LoginPage />} />
+          <Route index element={<LoginPage />} />
+          <Route path='/home' element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -410,4 +410,11 @@ function theming(){
 - This component is used for errors
 *Props:
 ? 1 - severity : the value of this prop better be error
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+++ Creating a single page website using MUI:
+@ In the first video:
+- Create a Login form page
+
+
  */
