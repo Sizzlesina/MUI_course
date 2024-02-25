@@ -1,6 +1,7 @@
 /** @format */
 
 import {
+  AppBar,
   Box,
   Button,
   Card,
@@ -9,11 +10,16 @@ import {
   CardMedia,
   Container,
   Grid,
+  IconButton,
+  Menu,
+  MenuItem,
   Stack,
+  Toolbar,
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import { AccountCircle } from "@mui/icons-material";
+import { useState } from "react";
 function HomePage() {
   const data = [
     {
@@ -62,8 +68,47 @@ function HomePage() {
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veritatis ipsum ipsa hic reprehenderit culpa quod. Aperiam architecto tempore sit facere nulla! Distinctio libero eveniet fuga fugiat provident. Repudiandae, ad!",
     },
   ];
+  const [anchor, setAnchor] = useState(null);
+  const handleClose = (e) => {
+    setAnchor(null);
+  };
+  const handleMenu = (e) => {
+    setAnchor(e.currentTarget);
+  };
   return (
     <Box>
+      <Box>
+        <AppBar position='static'>
+          <Toolbar>
+            <Typography variant='h6' sx={{ flexGrow: 1 }}>
+              My Blgo Website
+            </Typography>
+            <Box>
+              <IconButton color='inherit' size='large' onClick={handleMenu}>
+                <AccountCircle />
+              </IconButton>
+              <Menu
+                id='menu-appbar'
+                anchorEl={anchor}
+                keepMounted
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchor)}
+                onClose={handleClose}>
+                <MenuItem onClose={handleClose}>Profile</MenuItem>
+                <MenuItem onClose={handleClose}>My Account</MenuItem>
+                <MenuItem onClose={handleClose}>Logout</MenuItem>
+              </Menu>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </Box>
       <Box>
         <Container>
           <Typography variant='h2' align='center' color={"text.primary"}>

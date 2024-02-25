@@ -427,4 +427,6 @@ function theming(){
 - Create the HomePage 
 @ In the fourth video:
 - Add some stylings to the HomePage
+@ In the last Video:
+- For sure check the Menu component (it uses something named anchor and with anchor and using the states we open and close the menu on the header)
  */
