@@ -12,9 +12,10 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function HomePage() {
-  const data =  [
+  const data = [
     {
       id: 1,
       name: "blog 1",
@@ -88,12 +89,13 @@ function HomePage() {
           </Stack>
         </Container>
       </Box>
-      <Container>
-        <Grid container>
+      <Container sx={{ py: 8 }} maxWidth={"md"}>
+        <Grid container spacing={4}>
           {data.map((item) => (
-            <Grid item key={item.id}>
+            <Grid item key={item.id} xs={12} sm={6} md={4}>
               <Card>
                 <CardMedia
+                  sx={{ pt: "56.25%" }}
                   component='div'
                   image='https://source.unsplash.com/random?wallpapers'
                 />
@@ -112,6 +114,18 @@ function HomePage() {
           ))}
         </Grid>
       </Container>
+      <Box sx={{ bgcolor: "background.paper", p: 6 }} component={"footer"}>
+        <Typography variant='h6' align='center' gutterBottom>
+          Blog Footer
+        </Typography>
+        <Typography variant='body2' color={"text.secondary"} align='center'>
+          Copyright @{" "}
+          <Link color='inherit' href='#'>
+            My Website
+          </Link>{" "}
+          {new Date().getFullYear()}
+        </Typography>
+      </Box>
     </Box>
   );
 }

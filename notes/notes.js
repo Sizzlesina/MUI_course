@@ -425,4 +425,6 @@ function theming(){
 
 @ In the third video:
 - Create the HomePage 
+@ In the fourth video:
+- Add some stylings to the HomePage
  */
