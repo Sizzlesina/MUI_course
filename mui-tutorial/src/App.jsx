@@ -63,8 +63,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<LoginPage />} />
-          <Route index element={<LoginPage />} />
+          <Route path='/' element={<HomePage />} />
+          <Route index element={<HomePage />} />
           <Route path='/home' element={<HomePage />} />
         </Routes>
       </BrowserRouter>

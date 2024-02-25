@@ -415,6 +415,14 @@ function theming(){
 ++ Creating a single page website using MUI:
 @ In the first video:
 - Create a Login form page
+@ In the second video:
+- We want to talk about a new component which exists in the previous videos but we never talked about it:
+++ Paper:
+- This component is have a paper style (as the name says)
+*Props:
+? 1 - elevation
+? 2 - square
 
-
+@ In the third video:
+- Create the HomePage 
  */
