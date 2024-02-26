@@ -23,6 +23,7 @@
 import HomePage from "./SPA/pages/HomePage";
 import LoginPage from "./SPA/pages/LoginPage";
 import ListExamples from "./advance-components/ListExamples";
+import NavigationExamples from "./advance-components/NavigationExamples";
 import TableExamples from "./advance-components/TableExamples";
 import Form from "./state-management/Form";
 import StateOne from "./state-management/StateOne";
@@ -73,7 +74,8 @@ function App() {
       </BrowserRouter> */}
 
       {/* <TableExamples /> */}
-      <ListExamples />
+      {/* <ListExamples /> */}
+      <NavigationExamples />
     </div>
   );
 }

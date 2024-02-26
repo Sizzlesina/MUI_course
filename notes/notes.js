@@ -574,4 +574,22 @@ function theming(){
 ? 1 - in : The true and false value (an state)
 ? 2 - timeout : The "auto" value learned
 ? 3 - disablePadding
+
+@ Navigation:
+
+++ Tabs:
+- This component works like a container and get two props:
+* Props:
+? 1 - value : Value of the tab that currently we are in it
+
+? 2 - onChange : The new value of the tab
+
+!HINT: Better use an state for moving between tabs (new value for the handleChange)
+
+++ Tab:
+- This is a < /> component and get two props:
+* Props:
+? 1 - value : Which holds the value of the tab
+? 2 - label: Which holds the label of the tab
+
  */
