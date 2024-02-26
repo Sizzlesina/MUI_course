@@ -22,6 +22,7 @@
 
 import HomePage from "./SPA/pages/HomePage";
 import LoginPage from "./SPA/pages/LoginPage";
+import TableExamples from "./advance-components/TableExamples";
 import Form from "./state-management/Form";
 import StateOne from "./state-management/StateOne";
 import TablePage from "./state-management/TablePage";
@@ -61,13 +62,16 @@ function App() {
         </Routes>
       </BrowserRouter> */}
 
-      <BrowserRouter>
+      {/* Single Page Application  */}
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route index element={<HomePage />} />
           <Route path='/home' element={<HomePage />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <TableExamples />
     </div>
   );
 }

@@ -482,6 +482,10 @@ function theming(){
 
 @ In the second video:
 - It tests the components of the state-management folder but i havent watched the video cause the npm tets wont for me (I must watch and testing course)
+
+++ Libraries Used:
+@testing-lirary/react
+@testing-library/jest-dom
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @ Optimizing MUI (Material UI) apps:
 ++ Code Splitting:
@@ -539,4 +543,10 @@ function theming(){
 ? 6 - Add the remote of the github to the directory
 
 ? 7 - build the project again 
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@ Advanced MUI components;
+++ Table:
+_ TableContainer => Table => TableHead,TableBody => TableRow => TableCell
+
  */
