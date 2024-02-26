@@ -599,12 +599,35 @@ function theming(){
 ? 3 - onClose : OnClick handler event which toggle the state
 
 @ How to use the Drawer:
-1 - Create a Butotn component at the top of Drawer
-2 - on the onClick event handler  of the Button toggle the state
+1 - Create a Button component at the top of Drawer
+2 - on the onClick event handler of the Button toggle the state
 3 - Create a Drawer component below the Button component and give it the props needed
 4 - Inside the Drawer write whatever you want to show up
 
+++ Menu:
+- This component contains MenuItem
+* Props:
+? 1 - anchorEl 
+? 2 - open : This prop holds a Boolean value
+? 3 - onClose
 
+++ MenuItem:
+- This item is for the Menu Items
+* Props:
+? 1 - onClick
+
+@ How to use the Menu component:
+1 - Create a Button component for opening the menu
+
+2 - This Button should have a handleClick that set the anchor to "e.currentTarget"
+
+3 - Create a Menu component and give it a anchorEl prop and pass the anchorEl state to it
+
+4 - give it a open prop and set the value of it to "Boolean(anchorEl)"
+
+5 - give it a onClose prop and set the value of it to handleClose event handler
+
+6 - In the Menu component create a MenuItem and give it a onClick prop and set the value of it to handleClose
 
 
 // {datagrid , datepicker , grow , }

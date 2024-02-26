@@ -29,6 +29,7 @@
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import TabsExample from "./advance-components/TabsExample";
 import DrawerExamples from "./advance-components/DrawerExamples";
+import MenuExamples from "./advance-components/MenuExamples";
 
 function App() {
   return (
@@ -76,7 +77,8 @@ function App() {
       {/* <TableExamples /> */}
       {/* <ListExamples /> */}
       {/* <TabsExample /> */}
-      <DrawerExamples />
+      {/* <DrawerExamples /> */}
+      <MenuExamples />
     </div>
   );
 }
