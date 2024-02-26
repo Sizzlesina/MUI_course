@@ -19,16 +19,16 @@
 // import DarkMode from "./theming/DarkMode";
 // import StyledUtility from "./theming/StyledUtility";
 // import Theming from "./theming/Theming";
-
-import HomePage from "./SPA/pages/HomePage";
-import LoginPage from "./SPA/pages/LoginPage";
-import ListExamples from "./advance-components/ListExamples";
-import NavigationExamples from "./advance-components/NavigationExamples";
-import TableExamples from "./advance-components/TableExamples";
-import Form from "./state-management/Form";
-import StateOne from "./state-management/StateOne";
-import TablePage from "./state-management/TablePage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import HomePage from "./SPA/pages/HomePage";
+// import LoginPage from "./SPA/pages/LoginPage";
+// import ListExamples from "./advance-components/ListExamples";
+// import TableExamples from "./advance-components/TableExamples";
+// import Form from "./state-management/Form";
+// import StateOne from "./state-management/StateOne";
+// import TablePage from "./state-management/TablePage";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import TabsExample from "./advance-components/TabsExample";
+import DrawerExamples from "./advance-components/DrawerExamples";
 
 function App() {
   return (
@@ -75,7 +75,8 @@ function App() {
 
       {/* <TableExamples /> */}
       {/* <ListExamples /> */}
-      <NavigationExamples />
+      {/* <TabsExample /> */}
+      <DrawerExamples />
     </div>
   );
 }
