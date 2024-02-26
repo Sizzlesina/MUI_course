@@ -43,7 +43,7 @@ function Form() {
 
   return (
     <Box>
-      <Header />
+      {/* <Header /> */}
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <form onSubmit={handleSubmit} style={{ width: "20%" }}>
           <Typography variant='h5'>Simple form</Typography>

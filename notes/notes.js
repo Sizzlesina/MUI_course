@@ -469,6 +469,74 @@ function theming(){
 - Jest is a javascript testing framework developed by Facebook. It is widely adopted in the React community due to its simplicity and powerful features.
 
 - Both Jest and React Testing Library work well together and are often used in combination to test React components,including those built with MUI.
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ How to test the React application?:
+- As you remember we had d App.test.js file in the project created with npm create-react-app NOW we have to write the "npm test" command in the directory of the project to start testing the app
+
+++ So step by step how to test a component:
+? 1 - create a component.test.js file
+? 2 - npm test
+? 3 - commands inside the test file: Check the Form component in state-management test file
+
+!HINT: If the component is in another directory we must create a test file in the directory that the component exists
+
+@ In the second video:
+- It tests the components of the state-management folder but i havent watched the video cause the npm tets wont for me (I must watch and testing course)
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Optimizing MUI (Material UI) apps:
+++ Code Splitting:
+- Implement code splitting to split your application into smaller chunks, allowing users to load only the necessary code for each page or component.
+
+++ Tree Shaking:
+- Ensure that your bundler (.e.g. , Webpack) is configured to perform tree shaking
+
+++ CSS Optimization:
+- Optimize your CSS usage by reducing unnecessary styles
+@ Theme
+@ styled
+@ makeStyles
+
+++ Component Memoization:
+- Use memoization techniques, such as React's memo or the useMemo hook
+
+++ Virtualization:
+- For long lists or large datesets, implement virtualization techniques to render only the visible items
+
+++ Performance Testing:
+- Regulary test your application's performance using tools like Lighthouse, PageSpeed insights, or Web.dev
+
+++ Server-Side Rendering (SSR):
+- Consider implementing server-side rendering to improve the initial load time and enable search engine optimization (SEO)
+
+++ Production Build Optimization:
+- Ensure that your production build is optimized by enabling minification, compression, and caching
+
+++ Performance Profiling:
+- Use browser-based developement tools, such as Chrome DevTools, to profile your application's performance
+
+++ Continuous Monitoring and Optimization:
+- Performance optimization is an ongoing process. Continuously monitor your application's performance
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Deploying the project:
+++ Step by Step:
+? 1 - Create a github repository and move the files there
+
+? 2 - npm i gh-pages --save-dev
+
+? 3 - In the package.json file above "name":
+"homepage" : "github repo link"
+++ Example:
+"homepage" : "https://fraolb.github.io/mui.tut";
 
 
+? 4 - inside the "scripts" (package.json file):
+"predeploy": "npm run build ",
+"deploy" : "gh-pages -d build",
+
+? 5 - npm run deploy 
+(This then build the web page and creates a build folder)
+
+? 6 - Add the remote of the github to the directory
+
+? 7 - build the project again 
  */
