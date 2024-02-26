@@ -28,11 +28,12 @@
 // import TablePage from "./state-management/TablePage";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import TabsExample from "./advance-components/TabsExample";
-import DialogExamples from "./advance-components/DialogExamples";
-import DrawerExamples from "./advance-components/DrawerExamples";
-import MenuExamples from "./advance-components/MenuExamples";
-import SnackbarExamples from "./advance-components/SnackbarExamples";
-import TooltipExamples from "./advance-components/TooltipExamples";
+// import DialogExamples from "./advance-components/DialogExamples";
+// import DrawerExamples from "./advance-components/DrawerExamples";
+// import MenuExamples from "./advance-components/MenuExamples";
+// import SnackbarExamples from "./advance-components/SnackbarExamples";
+// import TooltipExamples from "./advance-components/TooltipExamples";
+import Dashboard from "./styled-components/Dashboard";
 
 function App() {
   return (
@@ -84,7 +85,8 @@ function App() {
       {/* <MenuExamples /> */}
       {/* <SnackbarExamples /> */}
       {/* <DialogExamples /> */}
-      <TooltipExamples />
+      {/* <TooltipExamples /> */}
+      <Dashboard />
     </div>
   );
 }
