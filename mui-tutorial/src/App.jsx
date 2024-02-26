@@ -30,6 +30,7 @@
 // import TabsExample from "./advance-components/TabsExample";
 import DrawerExamples from "./advance-components/DrawerExamples";
 import MenuExamples from "./advance-components/MenuExamples";
+import SnackbarExamples from "./advance-components/SnackbarExamples";
 
 function App() {
   return (
@@ -78,7 +79,8 @@ function App() {
       {/* <ListExamples /> */}
       {/* <TabsExample /> */}
       {/* <DrawerExamples /> */}
-      <MenuExamples />
+      {/* <MenuExamples /> */}
+      <SnackbarExamples />
     </div>
   );
 }

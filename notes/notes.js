@@ -630,5 +630,26 @@ function theming(){
 6 - In the Menu component create a MenuItem and give it a onClick prop and set the value of it to handleClose
 
 
+++ Snackbar:
+- This component is like a popup at the bottom of the page 
+
+@ How to use Snackbar:
+1 - Create a Button component and create a handleClick function for it for the onClick prop and then set the state value to false
+
+2 - Create a < /> Snackbar component and pass this props with the values below:
+* Props:
+1 - open : {state}
+2 - autoHideDuration : A number
+3 - onClose : handleClose event handler
+4 - message : Something you want to write inside the Snackbar
+5 - action : action variable
+
+@ How to write action variable:
+const action = (
+   <>
+   Some code that you want to write near the message like UNDO Button and a Button to close the Snackbar
+   </>
+)
+
 // {datagrid , datepicker , grow , }
  */
