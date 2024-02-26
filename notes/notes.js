@@ -651,5 +651,28 @@ const action = (
    </>
 )
 
+
+++ Dialog:
+- This component is like a container and works as same as the Modal component
+
+++ DialogTitle:
+- Title of the Dialog
+
+++ DialogContent:
+- Contains the Dialog content
+
+++ DialogContentText:
+- The text of the content will be here
+
+++ DialogActions:
+- The actions like close button or whatever
+
+@ How to use Dialog:
+1 - Create a Button and handleClick on the onClick
+2 - state to the open prop of the Dialog and handleClose to the onClose
+
+
+
+
 // {datagrid , datepicker , grow , }
  */
