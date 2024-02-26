@@ -32,6 +32,7 @@ import DialogExamples from "./advance-components/DialogExamples";
 import DrawerExamples from "./advance-components/DrawerExamples";
 import MenuExamples from "./advance-components/MenuExamples";
 import SnackbarExamples from "./advance-components/SnackbarExamples";
+import TooltipExamples from "./advance-components/TooltipExamples";
 
 function App() {
   return (
@@ -82,7 +83,8 @@ function App() {
       {/* <DrawerExamples /> */}
       {/* <MenuExamples /> */}
       {/* <SnackbarExamples /> */}
-      <DialogExamples />
+      {/* <DialogExamples /> */}
+      <TooltipExamples />
     </div>
   );
 }

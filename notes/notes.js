@@ -671,8 +671,12 @@ const action = (
 1 - Create a Button and handleClick on the onClick
 2 - state to the open prop of the Dialog and handleClose to the onClose
 
+++ Tooltip:
+- This component is like a hover to show the details of something
 
-
-
+@ How to use tooltip:
+- Inside the Tooltip component create a component or a thing you like 
+* Props:
+? 1 - title
 // {datagrid , datepicker , grow , }
  */
