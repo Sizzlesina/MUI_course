@@ -547,6 +547,31 @@ function theming(){
 
 @ Advanced MUI components;
 ++ Table:
-_ TableContainer => Table => TableHead,TableBody => TableRow => TableCell
+- TableContainer => Table => TableHead,TableBody => TableRow => TableCell
 
+++ List:
+- This component contains a ListItem component
+
+++ ListItem:
+- This component can contains a ListItemButton or ListItemText
+
+++ ListItemButton:
+- This component make a button styled ListItem that holds ListItemIcon and ListItemText
+
+++ ListItemIcon:
+- This component can holds an icon for the ListItem
+
+++ ListItemText:
+- This component is a < /> component and it gets two props:
+* Props:
+? 1 - primary : For the main text that we want to write inside the ListItemText
+
+? 2 - secondary : For the secondary text in the ListItemText
+
+++ Collapse:
+- This component is for when the menu items want to show up and show out on a onClick event (it holds the items)
+*Props:
+? 1 - in : The true and false value (an state)
+? 2 - timeout : The "auto" value learned
+? 3 - disablePadding
  */
