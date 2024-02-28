@@ -4,9 +4,12 @@ import { styled } from "@mui/material/styles";
 import {
   Badge,
   Box,
+  Container,
   Divider,
+  Grid,
   IconButton,
   List,
+  Paper,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -17,6 +20,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import { ChevronLeft } from "@mui/icons-material";
 import { mainListItems } from "./listItems";
+import Charts from "./Charts";
 
 const drawerWidth = 240;
 
@@ -69,7 +73,7 @@ function Dashboard() {
     setOpen(!open);
   };
   return (
-    <Box>
+    <Box display={"flex"}>
       <AppBar position='absolute' open={open}>
         <Toolbar
           sx={{
@@ -115,6 +119,26 @@ function Dashboard() {
           {mainListItems}
         </List>
       </Drawer>
+      <Box
+        component={"main"}
+        sx={{ flexGrow: 1, height: "100vh", overflow: "auto" }}>
+        <Toolbar />
+        <Container maxWidth='lg' sx={{ my: 4 }}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={8} lg={9}>
+              <Paper
+                sx={{
+                  p: 2,
+                  display: "flex",
+                  flexDirection: "column",
+                  height: 240,
+                }}>
+                <Charts />
+              </Paper>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     </Box>
   );
 }
