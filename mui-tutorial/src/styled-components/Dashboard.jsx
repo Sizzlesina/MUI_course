@@ -22,6 +22,7 @@ import { ChevronLeft } from "@mui/icons-material";
 import { mainListItems } from "./listItems";
 import Charts from "./Charts";
 import Deposit from "./Deposit";
+import Orders from "./Orders";
 
 const drawerWidth = 240;
 
@@ -146,6 +147,16 @@ function Dashboard() {
                   height: 240,
                 }}>
                 <Deposit />
+              </Paper>
+            </Grid>
+            <Grid item xs={12}>
+              <Paper
+                sx={{
+                  p: 2,
+                  display: "flex",
+                  flexDirection: "column",
+                }}>
+                <Orders />
               </Paper>
             </Grid>
           </Grid>
