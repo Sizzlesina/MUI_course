@@ -678,5 +678,14 @@ const action = (
 - Inside the Tooltip component create a component or a thing you like 
 * Props:
 ? 1 - title
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Tips and Tricks for MUI:
+++ Read documentation
+++ Use Pre-built Components
+++ Theme Customization
+++ Responsive Design
+++ Component Styling
+++ Theme Customization
+
 // {datagrid , datepicker , grow , }
  */
