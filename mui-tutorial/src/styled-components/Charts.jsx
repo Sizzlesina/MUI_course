@@ -1,6 +1,6 @@
 /** @format */
 
-import { Typography } from "@mui/material";
+import Title from "./Title";
 import {
   ResponsiveContainer,
   LineChart,
@@ -27,7 +27,7 @@ const data = [
 function Charts() {
   return (
     <>
-      <Typography variant='h2'>Today</Typography>
+      <Title data='Today' />
       <ResponsiveContainer>
         <LineChart data={data}>
           <XAxis dataKey='time' />
