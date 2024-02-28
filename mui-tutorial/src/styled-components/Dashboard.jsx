@@ -7,7 +7,6 @@ import {
   Divider,
   IconButton,
   List,
-  ListItem,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -17,6 +16,7 @@ import { useState } from "react";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import { ChevronLeft } from "@mui/icons-material";
+import { mainListItems } from "./listItems";
 
 const drawerWidth = 240;
 
@@ -40,7 +40,7 @@ const AppBar = styled(MuiAppBar, {
 const Drawer = styled(MuiDrawer, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
-  "&.MuiDrawer-paper": {
+  "& .MuiDrawer-paper": {
     position: "relative",
     whiteSpace: "noWrap",
     width: drawerWidth,
@@ -64,14 +64,20 @@ const Drawer = styled(MuiDrawer, {
   },
 }));
 function Dashboard() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const toggleDrawer = () => {
-    setOpen((prevState) => !prevState);
+    setOpen(!open);
   };
   return (
     <Box>
       <AppBar position='absolute' open={open}>
-        <Toolbar>
+        <Toolbar
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            px: [1],
+          }}>
           <IconButton
             edge='start'
             color='inherit'
@@ -105,7 +111,9 @@ function Dashboard() {
           </IconButton>
         </Toolbar>
         <Divider />
-        <List component={"nav"}>Hello</List>
+        <List component={"nav"} sx={{ minHeight: "100vh" }}>
+          {mainListItems}
+        </List>
       </Drawer>
     </Box>
   );
